@@ -1,0 +1,395 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	align-content: center;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*This is CSS reset to clear defult browser styles*/
+
+
+/* styles for our website start here*/
+
+/*Import font*/
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Kurale', serif;
+	background-color: #fff0f5;;
+	color: #000;
+	box-sizing: border-box;
+}
+
+/*First scren*/
+
+#first_screen{
+	background: url('../images/hero-bg.png') no-repeat center center;
+    background-size: cover;
+    padding: 32px 80px 60px;
+    text-align: center;
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+#page_wrapper{
+    padding: 80px;      
+}
+
+header{
+    display: flex;      /*1 line*/
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 60px;
+    object-fit: contain;
+    margin-right: 50px;
+  }
+
+.nav-center {
+	display: flex;
+	gap: 20px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-center a {
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	font-family: 'Kurale', serif;
+}
+
+.contact-button {
+	background: transparent;
+	border: 1px solid black;
+	border-radius: 12px;
+	padding: 3px 18px;
+	font-size: 18px;
+	font-family: 'Kurale', serif;
+	cursor: pointer;
+}
+
+/*Hero section*/
+
+
+.hero-content {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 200px 0;
+	text-align: left;
+}
+  
+.hero-content h1 {
+	font-size: 80px;
+	font-family: 'Kurale', serif;
+	color: black;
+	margin-bottom: 20px;
+}
+  
+.hero-content p {
+	font-size: 24px;
+	font-family: 'Kurale', serif;
+	color: black;
+	margin-bottom: 30px;
+	max-width: 550px;
+}
+
+.hero-button {
+	background:firebrick;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 20px;
+    font-family: 'Kurale', serif;
+	color: white;
+    cursor: pointer;
+}
+
+/*Second screen*/
+
+/* Works Section*/
+.works-section {
+	background-color: #fff0f5;
+	padding: 60px 40px;
+	text-align: center;
+	font-size: 28px;
+}
+  
+/* card container */
+.projects {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 30px;
+	margin-top: 40px;
+}
+  
+/* Project card */
+.project {
+	background: #fff0f5;
+	border-radius: 12px;
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+	width: 300px; /* Фиксированная ширина карточки */
+	overflow: hidden;  /*обрезка контента за границей*/
+	text-align: center;
+	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	height: auto; /* Автоматическая высота */
+  	padding-bottom: 16px; /* Добавляем отступ снизу */
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: flex-start; /* Выровнять контент сверху */
+}
+  
+/* Hover effect */
+  .project:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+  
+/* Image in card */
+.project img {
+	width: 100%;
+	height: 340px; /* Фиксированная высота */
+	object-fit: cover;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	margin-bottom: 8px; /* Немного меньший отступ снизу */
+}
+  
+/* Card title */
+.project h3 {
+	margin: 0 0 6px; /* Поднимаем текст ближе к картинке */
+  	font-size: 22px;
+}
+  
+/* Card Title */
+.project p {
+	font-size: 16px;
+	padding-bottom: 16px;
+	margin-bottom: 0 10px;
+}
+  
+/* Button "Show more" */
+.show-more {
+	margin-top: 30px;
+	font-weight: 600;
+	cursor: pointer;
+	color: black;
+	justify-content: flex-start;
+	font-size: 20px;
+
+}
+
+
+
+/* === Process Section === */
+.process-section {
+	background-color: #ffeaf6;
+	padding: 60px 80px;
+	font-family: 'Kurale', serif;
+}
+  
+.process-section h2 {
+	text-align: center;
+	font-size: 28px;
+	margin-bottom: 40px;
+}
+  
+  /* Step*/
+.step {
+	position: relative;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 1px dotted #333;
+}
+  
+/* Step Title */
+.step h3 {
+	font-size: 24px;
+	margin-bottom: 12px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+  
+  /* Text */
+.step p {
+	font-size: 16px;
+	line-height: 1.6;
+	margin: 0;
+}
+  
+  /* Circle with a number */
+.circle {
+	display: inline-block;
+	background: #ff4d4d;
+	color: white;
+	font-size: 16px;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 28px;
+	font-weight: bold;
+}
+
+
+/* ===== Contact Section ===== */
+.contact-section {
+	background: #f98fa2;
+	border-radius: 40px 40px 0 0;
+	padding: 60px 20px;
+	text-align: center;
+	color: white;
+	font-family: 'Kurale', serif;
+}
+  
+.contact-section h2 {
+	font-size: 40px;
+	margin-bottom: 10px;
+	color: white;
+}
+  
+.contact-section p {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+  
+  /* Form layout */
+form {
+	max-width: 700px;
+	margin: 0 auto;
+}
+  
+  /* Two-column inputs */
+.input-row {
+	display: flex;
+	gap: 20px;
+	margin-bottom: 20px;
+}
+  
+.input-row input, textarea {
+	flex: 1;
+	padding: 12px;
+	border-radius: 10px;
+	border: 1px solid white;
+	background: #f6adbae8;
+	font-size: 16px;
+	font-family: 'Kurale', serif;
+	color: white;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+  
+textarea {
+	width: 80%;
+	resize: none;
+	margin-bottom: 20px;
+}
+  
+input::placeholder,
+textarea::placeholder {
+	color: white;
+	opacity: 0.9;
+}
+  
+  /* Button */
+form button {
+	background-color: #ff4444;
+	border-color: white;
+	color: white;
+	padding: 12px 24px;
+	border-radius: 12px;
+	font-size: 16px;
+	font-family: 'Kurale', serif;
+	cursor: pointer;
+	box-shadow: 2px 4px 6px rgba(0,0,0,0.2);
+	transition: all 0.3s ease;
+}
+  
+form button:hover {
+	background-color: #e63939;
+}
+
+/* ===== Footer ===== */
+footer {
+	background-color: #ff4f58;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px 40px;
+	flex-wrap: wrap;
+}
+  
+  /*Left side with logo */
+.footer-left .footer-logo {
+	height: 70px;
+}
+  
+  /* Social Media Icons */
+.footer-icons {
+	display: flex;
+	gap: 20px;
+}
+  
+.footer-icons img {
+	width: 26px;
+	height: 26px;
+	transition: transform 0.3s ease;
+	background: transparent; 
+	border: none;
+	box-shadow: none;
+}
+  
+.footer-icons img:hover {
+	transform: scale(1.1);
+}
+  
+  /* The right part is the text */
+.footer-right {
+	font-size: 18px;
+	font-family: 'Kurale', serif;
+	color: black;
+	opacity: 0.9;
+}
